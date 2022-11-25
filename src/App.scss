@@ -1,0 +1,15 @@
+@use 'colorPalette';
+$app_border_width: 6px;
+
+.App
+{
+	// height: calc(100vh - $app_border_width *2);
+    height: 100vh;
+    min-height: 100vh;
+
+	border: $app_border_width solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(180deg, #80CCD7 0%, #AD5AEF 100%);
+
+	background: colorPalette.$bg_color;
+}

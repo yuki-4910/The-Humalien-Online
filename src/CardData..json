@@ -1,0 +1,367 @@
+[
+	{
+	  "_id": "1_red",
+	  "number": 1,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "2_red",
+	  "number": 2,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "3_red",
+	  "number": 3,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "4_red",
+	  "number": 4,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "5_red",
+	  "number": 5,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "6_red",
+	  "number": 6,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "7_red",
+	  "number": 7,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "8_red",
+	  "number": 8,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "9_red",
+	  "number": 9,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "10_red",
+	  "number": 10,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "11_red",
+	  "number": 11,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "12_red",
+	  "number": 12,
+	  "color": "red",
+      "isFront": false
+	},
+	{
+	  "_id": "13_red",
+	  "number": 13,
+	  "color": "red",
+      "isFront": false
+	},
+
+	{
+	  "_id": "1_blue",
+	  "number": 1,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "2_blue",
+	  "number": 2,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "3_blue",
+	  "number": 3,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "4_blue",
+	  "number": 4,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "5_blue",
+	  "number": 5,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "6_blue",
+	  "number": 6,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "7_blue",
+	  "number": 7,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "8_blue",
+	  "number": 8,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "9_blue",
+	  "number": 9,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "10_blue",
+	  "number": 10,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "11_blue",
+	  "number": 11,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "12_blue",
+	  "number": 12,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "13_blue",
+	  "number": 13,
+	  "color": "blue",
+      "isFront": false
+	},
+
+	{
+	  "_id": "1_yellow",
+	  "number": 1,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "2_yellow",
+	  "number": 2,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "3_yellow",
+	  "number": 3,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "4_yellow",
+	  "number": 4,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "5_yellow",
+	  "number": 5,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "6_yellow",
+	  "number": 6,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "7_yellow",
+	  "number": 7,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "8_yellow",
+	  "number": 8,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "9_yellow",
+	  "number": 9,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "10_yellow",
+	  "number": 10,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "11_yellow",
+	  "number": 11,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "12_yellow",
+	  "number": 12,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "13_yellow",
+	  "number": 13,
+	  "color": "yellow",
+      "isFront": false
+	},
+
+	{
+	  "_id": "1_green",
+	  "number": 1,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "2_green",
+	  "number": 2,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "3_green",
+	  "number": 3,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "4_green",
+	  "number": 4,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "5_green",
+	  "number": 5,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "6_green",
+	  "number": 6,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "7_green",
+	  "number": 7,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "8_green",
+	  "number": 8,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "9_green",
+	  "number": 9,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "10_green",
+	  "number": 10,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "11_green",
+	  "number": 11,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "12_green",
+	  "number": 12,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "13_green",
+	  "number": 13,
+	  "color": "green",
+      "isFront": false
+	},
+
+	{
+	  "_id": "trinity_yellow",
+	  "number": 333,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "trinity_green",
+	  "number": 333,
+	  "color": "green",
+      "isFront": false
+	},
+	{
+	  "_id": "trinity_blue",
+	  "number": 333,
+	  "color": "blue",
+      "isFront": false
+	},
+	{
+	  "_id": "trinity_red",
+	  "number": 333,
+	  "color": "red",
+      "isFront": false
+	},
+
+	{
+	  "_id": "eyes_yellow_0",
+	  "number": 666,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "eyes_yellow_1",
+	  "number": 666,
+	  "color": "yellow",
+      "isFront": false
+	},
+	{
+	  "_id": "humalien_white_0",
+	  "number": 999,
+	  "color": "white",
+      "isFront": false
+	},
+	{
+	  "_id": "humalie_white_1",
+	  "number": 999,
+	  "color": "white",
+      "isFront": false
+	}
+]
