@@ -5,7 +5,7 @@ import PassBtn from './pass_btn/PassBtn'
 import PlaceBtn from './place_btn/PlaceBtn'
 import { table_buttons_styles } from './TableButtonsStyles'
 
-const TableButtons = ({ children }:tableButtons_props) =>
+const TableButtons = ({ children, _clickedPlace, _clickedPass }:tableButtons_props) =>
 {
 
 
@@ -35,8 +35,12 @@ const TableButtons = ({ children }:tableButtons_props) =>
             justifyContent='center'
             display='flex'
         >
-            <PassBtn/>
-            <PlaceBtn/>
+            <PassBtn
+                _clickedPass={ _clickedPass }
+            />
+            <PlaceBtn
+                _clickedPlace={ _clickedPlace }
+            />
         </Flex>
 
     </Flex>

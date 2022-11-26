@@ -5,7 +5,7 @@ import Card from '../card/Card'
 import { stack_container, stack_text } from './CardStacksStyles';
 import { cardsStacks_props } from '../../interfaces/props';
 
-const CardStacks = ({ _cards }:cardsStacks_props) =>
+const CardStacks = ({ _cards, _clickedCard }:cardsStacks_props) =>
 {
     const stack_titles = ['A', 'B', 'C', 'D', 'E'];
 
@@ -45,9 +45,10 @@ const CardStacks = ({ _cards }:cardsStacks_props) =>
                                                         _color={ card_.color }
                                                         _number={ card_.number }
                                                         _isFront={ card_.isFront }
-                                                        _displayType={ 'stack' }
+                                                        _displayType={ card_.place }
                                                         _idx={card_idx_}
                                                         _isDraggable={true}
+                                                        _clickedCard={_clickedCard}
                                                     />
                                             ))
                                         }

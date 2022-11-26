@@ -35,6 +35,16 @@ export const card_in_hands =
     }
 }
 
+export const card_in_hands_selected =
+{
+
+    transform: 'translateY(-2rem)',
+
+    _notFirst: {
+        marginLeft: { base: '-1.5rem', md: '-4rem', lg: '-4vw' },
+    }
+}
+
 export const card_stack =
 {
     position: 'relative',
@@ -45,6 +55,15 @@ export const card_stack =
             transform: { base: 'translateY(1.5rem)', md: 'translateY(4rem)', lg: 'translateY(7rem)' },
         },
     },
+
+    _notFirst: {
+        marginTop: { base: '-85px', sm: '-7rem', md: '-11rem', lg: '-21vh' },
+    }
+}
+
+export const card_stack_selected =
+{
+    transform: 'rotate(20deg)',
 
     _notFirst: {
         marginTop: { base: '-85px', sm: '-7rem', md: '-11rem', lg: '-21vh' },

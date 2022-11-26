@@ -3,9 +3,19 @@ import { Draggable } from "react-beautiful-dnd";
 import { Center, Flex, Text } from "@chakra-ui/react";
 import { Icon } from '@iconify/react';
 import { card_props } from "../../interfaces/props";
-import { card, card_number__top, card_number__bottom, card__symbol, card_in_hands, card_stack, card_field } from "./CardStyle";
+import {
+    card,
+    card_number__top,
+    card_number__bottom,
+    card__symbol,
+    card_in_hands,
+    card_stack,
+    card_field,
+    card_in_hands_selected,
+    card_stack_selected,
+ } from "./CardStyle";
 
-const Card = ({ _id, _number, _color, _isFront, _displayType, _idx, _isDraggable }:card_props) =>
+const Card = ({ _id, _number, _color, _isFront, _displayType, _idx, _isDraggable, _clickedCard }:card_props) =>
 {
 	const [ cardColor, setCardColor ] = useState<string>('');
 	const [ number, setNumber ] = useState<string>('');
@@ -84,8 +94,16 @@ const Card = ({ _id, _number, _color, _isFront, _displayType, _idx, _isDraggable
 				setStyling({...card, ...card_in_hands});
 				break;
 
+            case 'hand_selected':
+				setStyling({...card, ...card_in_hands_selected});
+				break;
+
             case 'stack':
                 setStyling({...card, ...card_stack});
+                break;
+
+            case 'stack_selected':
+                setStyling({...card, ...card_stack_selected});
                 break;
 
             case 'field':
@@ -102,7 +120,7 @@ const Card = ({ _id, _number, _color, _isFront, _displayType, _idx, _isDraggable
 		setCardTitle();
 		setCardSymbol();
         setCardStyling();
-	}, [])
+	}, [ _displayType ])
 
   return (
 	<>
@@ -114,7 +132,7 @@ const Card = ({ _id, _number, _color, _isFront, _displayType, _idx, _isDraggable
     {
         (provided) => (
             <Flex
-                onClick={() => {console.log('clicked')}}
+                onClick={ _clickedCard ? () => _clickedCard( _id, _idx, _displayType ) : ()=>{}}
                 sx={styling}
                 border={ _isFront ? `2px solid ${cardColor}` : '2px solid #1B156F' }
                 background={ _isFront ? '#313036' : '#343343' }

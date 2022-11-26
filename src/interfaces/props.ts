@@ -8,10 +8,12 @@ export interface card_props {
     _displayType: string;
     _idx: number;
     _isDraggable: boolean;
+    _clickedCard?: ( id: string, idx: number,  _displayType: string ) => void;
 }
 
 export interface cardsInHands_props {
     _cards: Array<card_obj>;
+    _clickedCard: ( id: string,  idx: number, _displayType: string ) => void;
 }
 
 export interface cardsField_props {
@@ -20,6 +22,7 @@ export interface cardsField_props {
 
 export interface cardsStacks_props {
     _cards: Array<Array<card_obj>>;
+    _clickedCard: ( id: string,  idx: number, _displayType: string ) => void;
 }
 
 export interface header_props {
@@ -27,7 +30,17 @@ export interface header_props {
 }
 
 export interface tableButtons_props {
-    children: ReactNode
+    children: ReactNode;
+    _clickedPass: ( btn_type: string ) => void;
+    _clickedPlace: ( btn_type: string ) => void;
+}
+
+export interface PlaceBtn_props {
+    _clickedPlace?: ( btn_type: string ) => void;
+}
+
+export interface PassBtn_props {
+    _clickedPass?: ( btn_type: string ) => void;
 }
 
 export interface card_obj {
@@ -35,4 +48,5 @@ export interface card_obj {
     number: number;
     color: string;
     isFront: boolean;
+    place: string;
 }
