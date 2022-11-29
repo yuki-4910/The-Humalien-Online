@@ -42,7 +42,6 @@ const TableButtons = ({ children, _clickedPlace, _clickedPass }:tableButtons_pro
                 _clickedPlace={ _clickedPlace }
             />
         </Flex>
-
     </Flex>
     </>
   )

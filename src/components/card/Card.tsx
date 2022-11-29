@@ -13,6 +13,8 @@ import {
     card_field,
     card_in_hands_selected,
     card_stack_selected,
+    card_in_hands_dragging,
+    card_stack_dragging,
  } from "./CardStyle";
 
 const Card = ({ _id, _number, _color, _isFront, _displayType, _idx, _isDraggable, _clickedCard }:card_props) =>
@@ -98,12 +100,20 @@ const Card = ({ _id, _number, _color, _isFront, _displayType, _idx, _isDraggable
 				setStyling({...card, ...card_in_hands_selected});
 				break;
 
+            case 'hand_dragging':
+				setStyling({...card, ...card_in_hands_dragging});
+				break;
+
             case 'stack':
                 setStyling({...card, ...card_stack});
                 break;
 
             case 'stack_selected':
                 setStyling({...card, ...card_stack_selected});
+                break;
+
+            case 'stack_dragging':
+                setStyling({...card, ...card_stack_dragging});
                 break;
 
             case 'field':
@@ -120,6 +130,7 @@ const Card = ({ _id, _number, _color, _isFront, _displayType, _idx, _isDraggable
 		setCardTitle();
 		setCardSymbol();
         setCardStyling();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [ _displayType ])
 
   return (

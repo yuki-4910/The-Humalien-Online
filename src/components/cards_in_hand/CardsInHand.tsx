@@ -13,7 +13,7 @@ const CardsInHand = ({ _cards, _clickedCard }:cardsInHands_props) => {
             direction='horizontal'
         >
         {
-                (provided) => (
+                (provided, snapshot) => (
                     <Flex
                         ref={provided.innerRef}
                         {...provided.droppableProps}
@@ -26,7 +26,11 @@ const CardsInHand = ({ _cards, _clickedCard }:cardsInHands_props) => {
                                         _color={card_.color}
                                         _number={card_.number}
                                         _isFront={card_.isFront}
-                                        _displayType={card_.place}
+                                        _displayType={
+                                            snapshot.isDraggingOver
+                                            ? 'hand_dragging'
+                                            : card_.place
+                                        }
                                         _idx={idx_}
                                         _isDraggable={true}
                                         _clickedCard={_clickedCard}

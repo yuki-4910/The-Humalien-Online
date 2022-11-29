@@ -43,6 +43,10 @@ export interface PassBtn_props {
     _clickedPass?: ( btn_type: string ) => void;
 }
 
+export interface FieldContainer_props {
+    children: ReactNode;
+}
+
 export interface card_obj {
     _id: string;
     number: number;

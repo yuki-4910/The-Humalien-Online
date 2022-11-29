@@ -6,6 +6,7 @@ import CardsInHand from "../cards_in_hand/CardsInHand"
 import CardStacks from "../card_stacks/CardStacks"
 import CardsField from '../cards_field/CardsField';
 import Header from '../header/Header';
+import FieldContainer from '../field_container/FieldContainer';
 import TableButtons from '../table_buttons/TableButtons';
 import { card_obj } from "../../interfaces/props";
 
@@ -124,12 +125,18 @@ const Table = () =>
 				if ( selected_card.number === destination_card.number)
 				{
 					stacks[source_idx].splice( source.index, 1);
-					stacks[source_idx][source.index -1].isFront = true;
+
+                    if ( source.index > 0 )
+                    {
+                        stacks[source_idx][source.index -1].isFront = true;
+                    }
 
 					stacks[destination_idx].splice( stacks[destination_idx].length -1, 0, selected_card );
 
 					setCardsStacks( stacks );
 				} else {
+                    console.log('im here');
+
 					return;
 				}
 			}
@@ -282,10 +289,11 @@ const Table = () =>
 						/>
 					</Header>
 
-
-					<CardsField
-						_cards={cardsOnField}
-					/>
+                    <FieldContainer>
+                        <CardsField
+                            _cards={cardsOnField}
+                        />
+                    </FieldContainer>
 
 					<TableButtons
 						_clickedPass={ cardsOnFieldHandler }
