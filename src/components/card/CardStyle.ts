@@ -24,14 +24,14 @@ export const card_in_hands =
     position: 'relative',
 
     _hover: {
-        transform: 'translateY(-1rem)',
+        transform: { base: '', md: 'translateY(-1rem)'},
         '~.card': {
-            transform: { base: 'translateX(1.5rem)', md: 'translateX(4rem)', lg: 'translateX(7rem)' },
+            transform: { base: '', md: 'translateX(4rem)', lg: 'translateX(7rem)' },
         },
     },
 
-    _notFirst: {
-        marginLeft: { base: '-1.5rem', md: '-4rem', lg: '-4vw' },
+    _notFirst: {    
+        marginLeft: { base: '-1.2rem', md: '-4rem', lg: '-4vw' },
     }
 }
 
@@ -59,9 +59,9 @@ export const card_stack =
     position: 'relative',
 
     _hover: {
-        transform: 'translateY(1rem)',
+        transform: { base: '', md: 'translateY(1rem)'},
         '~.card': {
-            transform: { base: 'translateY(1.5rem)', md: 'translateY(4rem)', lg: 'translateY(7rem)' },
+            transform: { base: '', md: 'translateY(4rem)', lg: 'translateY(7rem)' },
         },
     },
 
@@ -74,13 +74,6 @@ export const card_stack_dragging =
 {
     position: 'relative',
 
-    _hover: {
-        transform: 'translateY(1rem)',
-        '~.card': {
-            transform: { base: 'translateY(1.5rem)', md: 'translateY(4rem)', lg: 'translateY(7rem)' },
-        },
-    },
-
     _notFirst: {
         marginTop: { base: '-85px', sm: '-7rem', md: '-11rem', lg: '-21vh' },
     }
@@ -88,7 +81,7 @@ export const card_stack_dragging =
 
 export const card_stack_selected =
 {
-    transform: 'rotate(20deg)',
+    transform: 'rotate(20deg) translateY(1rem)',
 
     _notFirst: {
         marginTop: { base: '-85px', sm: '-7rem', md: '-11rem', lg: '-21vh' },

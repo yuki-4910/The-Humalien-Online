@@ -11,7 +11,6 @@ const PlaceBtn = ({ _clickedPlace }:PlaceBtn_props) =>
   return (
     <>
         <Button
-            as='div'
             sx={place_btn_styles}
             onClick={_clickedPlace? () => _clickedPlace( 'place_btn' ) : ()=>{}}
         >

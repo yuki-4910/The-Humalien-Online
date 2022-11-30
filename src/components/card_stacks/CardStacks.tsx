@@ -5,7 +5,7 @@ import Card from '../card/Card'
 import { stack_container, } from './CardStacksStyles';
 import { cardsStacks_props } from '../../interfaces/props';
 
-const CardStacks = ({ _cards, _clickedCard }:cardsStacks_props) =>
+const CardStacks = ({ _cards, _clickedCard, _isDraggable, _isDropDisabled }:cardsStacks_props) =>
 {
     const stack_titles = ['A', 'B', 'C', 'D', 'E'];
 
@@ -20,6 +20,7 @@ const CardStacks = ({ _cards, _clickedCard }:cardsStacks_props) =>
                 <Droppable
                 droppableId={ 'stack_' + stack_titles[ alphabet_ ] }
                 key={alphabet_}
+                isDropDisabled={_isDropDisabled}
                 >
                     {
                         ( provided, snapshot ) => (
@@ -43,8 +44,8 @@ const CardStacks = ({ _cards, _clickedCard }:cardsStacks_props) =>
                                                         : card_.place
                                                     }
                                                     _idx={card_idx_}
-                                                    _isDraggable={true}
-                                                    _clickedCard={_clickedCard}
+                                                    _isDraggable={_isDraggable}
+                                                    _clickedCard={_clickedCard ? _clickedCard : ()=>{}}
                                                 />
                                         ))
                                     }

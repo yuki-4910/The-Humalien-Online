@@ -286,10 +286,14 @@ const Table = () =>
 						<CardStacks
 							_cards={cardsStacks}
 							_clickedCard={clickedCardsHandler}
+                            _isDraggable={true}
+                            _isDropDisabled={false}
 						/>
 					</Header>
 
-                    <FieldContainer>
+                    <FieldContainer
+                        _opponentsStack={cardsStacks}
+                    >
                         <CardsField
                             _cards={cardsOnField}
                         />

@@ -22,7 +22,9 @@ export interface cardsField_props {
 
 export interface cardsStacks_props {
     _cards: Array<Array<card_obj>>;
-    _clickedCard: ( id: string,  idx: number, _displayType: string ) => void;
+    _clickedCard?: ( id: string,  idx: number, _displayType: string ) => void;
+    _isDropDisabled: boolean;
+    _isDraggable: boolean;
 }
 
 export interface header_props {
@@ -45,6 +47,12 @@ export interface PassBtn_props {
 
 export interface FieldContainer_props {
     children: ReactNode;
+    _opponentsStack: Array<Array<card_obj>>;
+}
+
+export interface OpponentsStackModal_props {
+    children: ReactNode;
+    _opponentsStack: Array<Array<card_obj>>;
 }
 
 export interface card_obj {
