@@ -14,7 +14,7 @@ import {
 
 import CardStacks from '../../card_stacks/CardStacks';
 import { OpponentsStackModal_props } from '../../../interfaces/props'
-import { pass_btn_styles } from '../../table_buttons/pass_btn/PassBtnStyles';
+import { violet_btn_styles } from '../../table_buttons/violet_btn/VioletBtnStyles';
 
 const OpponentsStackModal = ({ children, _opponentsStack }: OpponentsStackModal_props) =>
 {
@@ -73,7 +73,7 @@ const OpponentsStackModal = ({ children, _opponentsStack }: OpponentsStackModal_
             marginTop='2rem'
           >
             <Button
-                sx={pass_btn_styles}
+                sx={violet_btn_styles}
                 marginRight={2}
                 onClick={onClose}
             >

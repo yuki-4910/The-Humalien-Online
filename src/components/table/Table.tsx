@@ -162,7 +162,14 @@ const Table = () =>
 			if ( selectedCards[idx].place === 'hand' )
 			{
 				const hand_idx = cardsInHand.findIndex(( card ) => card._id === selectedCards[idx]._id);
-				hand.splice( hand_idx, 1 );
+                if ( btn_type_ === 'place_btn' )
+                {
+                    hand.splice( hand_idx, 1 );
+                }
+                else if ( btn_type_ === 'pass_btn' )
+                {
+                    hand[hand_idx].place = 'hand'
+                };
 			}
 			else if ( selectedCards[idx].place === 'stack' )
 			{
@@ -171,11 +178,18 @@ const Table = () =>
 					const stack_idx = stacks[s_idx].findIndex(( card ) => card._id === selectedCards[idx]._id);
 					if ( stack_idx !== -1 )
 					{
-						if ( stack_idx !== 0 && stacks[s_idx][stack_idx +1]?.isFront !== true)
-						{
-							stacks[s_idx][stack_idx -1].isFront = true;
-						}
-						stacks[s_idx].splice(stack_idx, 1);
+                        if ( btn_type_ === 'place_btn' )
+                        {
+                            if ( stack_idx !== 0 && stacks[s_idx][stack_idx +1]?.isFront !== true)
+                            {
+                                stacks[s_idx][stack_idx -1].isFront = true;
+                            }
+                            stacks[s_idx].splice(stack_idx, 1);
+                        }
+                        else if ( btn_type_ === 'pass_btn' )
+                        {
+                            stacks[s_idx][stack_idx].place = 'stack';
+                        };
 					};
 				}
 			}

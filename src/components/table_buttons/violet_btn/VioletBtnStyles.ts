@@ -1,4 +1,4 @@
-export const pass_btn_text =
+export const violet_btn_text =
 {
     fontFamily: 'Ubuntu',
     fontStyle: 'normal',
@@ -14,7 +14,7 @@ export const pass_btn_text =
     textShadow: '0px -10px 25px #6A00FF, 0px -5px 50px #591F7D, 0px 10px 25px #6A00FF',
 }
 
-export const pass_btn_styles =
+export const violet_btn_styles =
 {
 
     margin: '1rem',
@@ -44,5 +44,5 @@ export const pass_btn_styles =
         boxShadow: '1px 1px 2px rgba(83, 82, 107, 0.3), -1px -1px 2px rgba(21, 20, 27, 0.5), inset -1px 1px 2px rgba(21, 20, 27, 0.2), inset 1px -1px 2px rgba(21, 20, 27, 0.2), inset -1px -1px 2px rgba(83, 82, 107, 0.9), inset 1px 1px 3px rgba(21, 20, 27, 0.9)',
     },
 
-    ...pass_btn_text,
+    ...violet_btn_text,
 }

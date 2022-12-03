@@ -1,4 +1,4 @@
-export const place_btn_text =
+export const teal_btn_text =
 {
     fontFamily: 'Ubuntu',
     fontStyle: 'normal',
@@ -14,7 +14,7 @@ export const place_btn_text =
     textShadow: '0px -10px 40px #14B5E8, 0px -5px 100px #0096C7, 0px 10px 40px #14B5E8',
 }
 
-export const place_btn_styles =
+export const teal_btn_styles =
 {
 
     margin: '1rem',
@@ -43,5 +43,5 @@ export const place_btn_styles =
         boxShadow: '1px 1px 2px rgba(83, 82, 107, 0.3), -1px -1px 2px rgba(21, 20, 27, 0.5), inset -1px 1px 2px rgba(21, 20, 27, 0.2), inset 1px -1px 2px rgba(21, 20, 27, 0.2), inset -1px -1px 2px rgba(83, 82, 107, 0.9), inset 1px 1px 3px rgba(21, 20, 27, 0.9)',
     },
 
-    ...place_btn_text,
+    ...teal_btn_text,
 }

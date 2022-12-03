@@ -1,8 +1,8 @@
 import { Flex } from '@chakra-ui/react'
 
 import { tableButtons_props } from '../../interfaces/props'
-import PassBtn from './pass_btn/PassBtn'
-import PlaceBtn from './place_btn/PlaceBtn'
+import VioletBtn from './violet_btn/VioletBtn'
+import PlaceBtn from './teal_btn/TealBtn'
 import { table_buttons_styles } from './TableButtonsStyles'
 
 const TableButtons = ({ children, _clickedPlace, _clickedPass }:tableButtons_props) =>
@@ -22,7 +22,7 @@ const TableButtons = ({ children, _clickedPlace, _clickedPass }:tableButtons_pro
             opacity='0'
             display={{ base: 'none', sm: 'none', md: 'none', lg: 'flex' }}
         >
-            <PassBtn/>
+            <VioletBtn/>
             <PlaceBtn/>
         </Flex>
         {
@@ -35,11 +35,11 @@ const TableButtons = ({ children, _clickedPlace, _clickedPass }:tableButtons_pro
             justifyContent='center'
             display='flex'
         >
-            <PassBtn
-                _clickedPass={ _clickedPass }
+            <VioletBtn
+                _clickedPass={() => _clickedPass( 'pass_btn' ) }
             />
             <PlaceBtn
-                _clickedPlace={ _clickedPlace }
+                _clickedPlace={ () => _clickedPlace( 'place_btn' ) }
             />
         </Flex>
     </Flex>

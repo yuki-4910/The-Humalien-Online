@@ -1,12 +1,19 @@
 import { Center, Flex } from '@chakra-ui/react';
-import './App.scss';
+import { Route, Routes } from 'react-router-dom';
 
 import Table from './components/table/Table';
+import Welcome from './pages/welcome/Welcome';
+import './App.scss';
+
 
 function App() {
   return (
 	<div className="App">
-        <Table/>
+        <Routes>
+            <Route path='/' element={<Welcome/>} />
+            <Route path='/table' element={<Table/>} />
+
+        </Routes>
 	</div>
   );
 }

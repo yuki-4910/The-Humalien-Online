@@ -38,11 +38,11 @@ export interface tableButtons_props {
 }
 
 export interface PlaceBtn_props {
-    _clickedPlace?: ( btn_type: string ) => void;
+    _clickedPlace?: ( ) => void;
 }
 
 export interface PassBtn_props {
-    _clickedPass?: ( btn_type: string ) => void;
+    _clickedPass?: ( ) => void;
 }
 
 export interface FieldContainer_props {
