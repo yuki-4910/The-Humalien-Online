@@ -1,8 +1,8 @@
-import { Button, Center, Flex, Heading, VStack } from "@chakra-ui/react"
+import { Button, Center, Flex, VStack } from "@chakra-ui/react"
 import { teal_btn_styles } from "../../components/buttons/teal_btn/TealBtnStyles"
 import { violet_btn_styles } from "../../components/buttons/violet_btn/VioletBtnStyles"
 
-import { landing_text } from "./LandingStyles"
+import Headline from "../../components/headline/Headline"
 
 const Landing = () => {
   return (
@@ -12,12 +12,9 @@ const Landing = () => {
             height='80%'
         >
             <VStack>
-                <Heading
-                    sx={landing_text}
-                    size={{ base: 'xl', sm: '2xl', md: '3xl', lg: '4xl' }}
-                >
+                <Headline>
                     Welcome Yuki
-                </Heading>
+                </Headline>
 
                 <Center
                 marginTop='2rem'

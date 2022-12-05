@@ -1,4 +1,4 @@
-export const landing_text =
+export const headline_text =
 {
     marginY: '2rem',
     fontFamily: 'Orbitron, sans-serif',

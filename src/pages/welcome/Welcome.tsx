@@ -1,9 +1,9 @@
 import { useState } from "react"
-import { Button, Center, Heading, VStack } from "@chakra-ui/react"
+import { Button, Center, VStack } from "@chakra-ui/react"
 
-import { welcome_text, welcome_input } from "./WelcomeStyles"
 import { teal_btn_styles } from "../../components/buttons/teal_btn/TealBtnStyles"
 import Input from "../../components/inputs/Input"
+import Headline from "../../components/headline/Headline"
 
 const Welcome = () =>
 {
@@ -18,14 +18,11 @@ const Welcome = () =>
         height='80%'
     >
         <VStack>
-            <Heading
-                sx={welcome_text}
-                size={{ base: 'xl', sm: '2xl', md: '3xl', lg: '4xl' }}
-            >
+            <Headline>
                 Welcome to
                 <br/>
                 the Humalien
-            </Heading>
+            </Headline>
 
             <Input
                 _color='teal'
