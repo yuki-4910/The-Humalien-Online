@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 
 export interface card_props {
     _id: string;
@@ -53,6 +53,12 @@ export interface FieldContainer_props {
 export interface OpponentsStackModal_props {
     children: ReactNode;
     _opponentsStack: Array<Array<card_obj>>;
+}
+
+export interface Input_props {
+    _color: string;
+    _placeholder: string;
+    _onTyping: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export interface card_obj {

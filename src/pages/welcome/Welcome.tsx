@@ -1,10 +1,16 @@
-import { Button, Center, Heading, Input, VStack } from "@chakra-ui/react"
+import { useState } from "react"
+import { Button, Center, Heading, VStack } from "@chakra-ui/react"
 
 import { welcome_text, welcome_input } from "./WelcomeStyles"
-import { teal_btn_styles } from "../../components/table_buttons/teal_btn/TealBtnStyles"
+import { teal_btn_styles } from "../../components/buttons/teal_btn/TealBtnStyles"
+import Input from "../../components/inputs/Input"
 
 const Welcome = () =>
 {
+    const [ userName, setUserName ] = useState('')
+
+    console.log(userName);
+
   return (
     <>
     <Center
@@ -22,10 +28,9 @@ const Welcome = () =>
             </Heading>
 
             <Input
-                sx={welcome_input}
-                variant='unstyled'
-                placeholder="Enter you user name"
-
+                _color='teal'
+                _placeholder='Enter your use name'
+                _onTyping={setUserName}
             />
 
             <Center

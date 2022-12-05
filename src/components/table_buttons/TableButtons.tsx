@@ -1,8 +1,8 @@
 import { Flex } from '@chakra-ui/react'
 
 import { tableButtons_props } from '../../interfaces/props'
-import VioletBtn from './violet_btn/VioletBtn'
-import PlaceBtn from './teal_btn/TealBtn'
+import VioletBtn from '../buttons/violet_btn/VioletBtn'
+import PlaceBtn from '../buttons/teal_btn/TealBtn'
 import { table_buttons_styles } from './TableButtonsStyles'
 
 const TableButtons = ({ children, _clickedPlace, _clickedPass }:tableButtons_props) =>

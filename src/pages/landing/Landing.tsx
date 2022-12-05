@@ -1,6 +1,6 @@
 import { Button, Center, Flex, Heading, VStack } from "@chakra-ui/react"
-import { teal_btn_styles } from "../../components/table_buttons/teal_btn/TealBtnStyles"
-import { violet_btn_styles } from "../../components/table_buttons/violet_btn/VioletBtnStyles"
+import { teal_btn_styles } from "../../components/buttons/teal_btn/TealBtnStyles"
+import { violet_btn_styles } from "../../components/buttons/violet_btn/VioletBtnStyles"
 
 import { landing_text } from "./LandingStyles"
 

@@ -14,7 +14,7 @@ import {
 
 import CardStacks from '../../card_stacks/CardStacks';
 import { OpponentsStackModal_props } from '../../../interfaces/props'
-import { violet_btn_styles } from '../../table_buttons/violet_btn/VioletBtnStyles';
+import { violet_btn_styles } from '../../buttons/violet_btn/VioletBtnStyles';
 
 const OpponentsStackModal = ({ children, _opponentsStack }: OpponentsStackModal_props) =>
 {
